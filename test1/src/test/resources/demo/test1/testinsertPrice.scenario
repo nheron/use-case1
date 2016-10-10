@@ -4,7 +4,7 @@
   <globals/>
   <fixtures>
     <execution-trace>
-      <executionTimeResult>0</executionTimeResult>
+      <executionTimeResult>16</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -19,9 +19,9 @@
         <expect-field>
           <fieldName>priceType</fieldName>
           <expected>PriceType.promotion</expected>
-          <actualResult>No match</actualResult>
+          <actualResult>promotion</actualResult>
           <successResult>false</successResult>
-          <explanation>Fact of type [Price] was not found in the results.</explanation>
+          <explanation>[Price] field [priceType] was [promotion] expected [PriceType.promotion].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -30,7 +30,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-10-10 17:19:06.803 UTC</lastRunResult>
+  <lastRunResult>2016-10-10 17:23:05.436 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.test1</packageName>
@@ -42,6 +42,6 @@
     </imports>
   </imports>
   <ksessions>
-    <string>defaultKieSession</string>
+    <string>kie-session1</string>
   </ksessions>
 </scenario>
