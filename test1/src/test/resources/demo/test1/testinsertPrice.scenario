@@ -23,7 +23,7 @@
           <successResult>false</successResult>
           <explanation>Fact of type [Price] was not found in the results.</explanation>
           <operator>==</operator>
-          <nature>4</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Price</name>
