@@ -2,6 +2,7 @@ package demo.test1;
 
 import java.lang.Number;
 import org.chtijbug.example.swimmingpool.Price;
+import org.chtijbug.example.swimmingpool.PriceType;
 
 rule "insertPrice"
 	dialect "mvel"
