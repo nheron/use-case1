@@ -75,17 +75,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>origin-repository.jboss.org</id>
-        <url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</url>
-        <source>SETTINGS</source>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
+        <id>origin-repository.jboss.org</id>
+        <url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
