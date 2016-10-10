@@ -3,16 +3,25 @@
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>insertPrice</ruleName>
+      <explanation>Rule [insertPrice] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>priceType</fieldName>
           <expected>PriceType.promotion</expected>
+          <actualResult>No match</actualResult>
+          <successResult>false</successResult>
+          <explanation>Fact of type [Price] was not found in the results.</explanation>
           <operator>==</operator>
           <nature>4</nature>
         </expect-field>
@@ -21,6 +30,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2016-10-10 17:19:06.803 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.test1</packageName>
