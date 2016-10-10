@@ -1,13 +1,37 @@
 <scenario>
-  <name>testinsertPrice</name>
+  <name>testinsertPrice.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <execution-trace/>
+    <expect-rule>
+      <ruleName>insertPrice</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>priceType</fieldName>
+          <expected>PriceType.promotion</expected>
+          <operator>==</operator>
+          <nature>4</nature>
+        </expect-field>
+      </fieldValues>
+      <name>Price</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.test1</packageName>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.chtijbug.example.swimmingpool.Price</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
